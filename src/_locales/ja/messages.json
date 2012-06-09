@@ -1,0 +1,86 @@
+{
+  "ext_name": {
+    "message": "Backend"
+  },
+  "ext_description": {
+    "message": "GoogleChromeの管理機能（'chrome://'や'about:'でアクセスするようなページ）への迅速なアクセスを可能とします。"
+  },
+  "font_family": {
+    "message": "'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, Arial, Verdana, 'ＭＳ Ｐゴシック', sans-serif"
+  },
+  "chrome_settings_clear" : {
+    "message" : "閲覧履歴データを削除する"
+  },
+  "chrome_settings_content" : {
+    "message" : "コンテンツの設定"
+  },
+  "chrome_settings_cookies" : {
+    "message" : "Cookie とサイトデータ"
+  },
+  "chrome_settings_languages" : {
+    "message" : "言語"
+  },
+  "chrome_help" : {
+    "message" : "ヘルプ"
+  },
+  "chrome_settings" : {
+    "message" : "設定"
+  },
+  "chrome_extensions" : {
+    "message" : "拡張機能"
+  },
+  "_webstore_theme" : {
+    "message" : "テーマを探す"
+  },
+  "_webstore_home" : {
+    "message" : "アプリを探す"
+  },
+  "_webstore_ext" : {
+    "message" : "拡張機能を探す"
+  },
+  "chrome_downloads" : {
+    "message" : "ダウンロード"
+  },
+  "chrome_history" : {
+    "message" : "閲覧履歴"
+  },
+  "chrome_bookmarks" : {
+    "message" : "ブックマーク管理"
+  },
+  "about_plugins" : {
+    "message" : "プラグイン管理"
+  },
+  "about_cache" : {
+    "message" : "キャッシュ一覧"
+  },
+  "about_memory" : {
+    "message" : "メモリー使用量"
+  },
+  "about_stats" : {
+    "message" : "統計"
+  },
+  "about_dns" : {
+    "message" : "DNS統計情報"
+  },
+  "about_network" : {
+    "message" : "ネットワーク"
+  },
+  "about_crash" : {
+    "message" : "クラッシュ画面"
+  },
+  "about_hang" : {
+    "message" : "ハングアップ警告"
+  },
+  "about_internets" : {
+    "message" : "Internets"
+  },
+  "about_histograms" : {
+    "message" : "処理時間の度数分布図"
+  },
+  "about_version" : {
+    "message" : "バージョン"
+  },
+  "about_flags" : {
+    "message" : "試験運用機能"
+  }
+}

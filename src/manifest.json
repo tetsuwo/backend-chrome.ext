@@ -1,0 +1,16 @@
+{
+  "name": "__MSG_ext_name__",
+  "description": "__MSG_ext_description__",
+  "default_locale": "en",
+  "browser_action": {
+  "default_icon": "images/128.png",
+    "popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/128.png",
+    "48": "images/128.png",
+    "64": "images/128.png"
+  },
+  "permissions": ["tabs"],
+  "version": "0.2.1"
+}

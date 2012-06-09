@@ -1,0 +1,86 @@
+{
+  "ext_name": {
+    "message": "Backend"
+  },
+  "ext_description": {
+    "message": "Enables quick access to the backyard screen, 'chrome://' and 'about:' pages."
+  },
+  "font_family": {
+    "message": "Arial, Verdana, sans-serif"
+  },
+  "chrome_settings_clear" : {
+    "message" : "Clear browsing data"
+  },
+  "chrome_settings_content" : {
+    "message" : "Content settings"
+  },
+  "chrome_settings_cookies" : {
+    "message" : "Cookie and site Data"
+  },
+  "chrome_settings_languages" : {
+    "message" : "Languages"
+  },
+  "chrome_help" : {
+    "message" : "Help"
+  },
+  "chrome_settings" : {
+    "message" : "Settings"
+  },
+  "chrome_extensions" : {
+    "message" : "Extensions"
+  },
+  "_webstore_theme" : {
+    "message" : "Find Themes"
+  },
+  "_webstore_home" : {
+    "message" : "Find Apps"
+  },
+  "_webstore_ext" : {
+    "message" : "Find Extensions"
+  },
+  "chrome_downloads" : {
+    "message" : "Downloads"
+  },
+  "chrome_history" : {
+    "message" : "History"
+  },
+  "chrome_bookmarks" : {
+    "message" : "Bookmark Manager"
+  },
+  "about_plugins" : {
+    "message" : "Plug-ins"
+  },
+  "about_cache" : {
+    "message" : "Cache List"
+  },
+  "about_memory" : {
+    "message" : "Memory Info"
+  },
+  "about_stats" : {
+    "message" : "Stats"
+  },
+  "about_dns" : {
+    "message" : "DNS Stats"
+  },
+  "about_network" : {
+    "message" : "Network"
+  },
+  "about_crash" : {
+    "message" : "Crash Screen"
+  },
+  "about_hang" : {
+    "message" : "Hang"
+  },
+  "about_internets" : {
+    "message" : "Internets"
+  },
+  "about_histograms" : {
+    "message" : "Histograms"
+  },
+  "about_version" : {
+    "message" : "Version"
+  },
+  "about_flags" : {
+    "message" : "Experimental Features"
+  }
+}
