@@ -62,16 +62,26 @@ function goBackyard(url) {
 function buildMenu() {
     document.body.style.fontFamily = chrome.i18n.getMessage('font_family');
     DOMId('pages').innerHTML = '';
+
     for (key in PAGES) {
-        var url = PAGES[key];
-        var tmp = '';
-        tmp += '<div>';
-        tmp += '<a href="javascript:void(0);" onclick="goBackyard(\'' + url + '\')">';
-        tmp += '<span>';
-        tmp += chrome.i18n.getMessage(key);
-        tmp += '</span>';
-        tmp += '</a>';
-        DOMId('pages').innerHTML += tmp;
+        var
+        url  = PAGES[key],
+        div  = document.createElement('div'),
+        a    = document.createElement('a'),
+        span = document.createElement('span');
+
+        span.innerText = chrome.i18n.getMessage(key);
+
+        a.href = '#';
+        a.setAttribute('data-url', url);
+        a.onclick = function() {
+            goBackyard(this.getAttribute('data-url'));
+        };
+
+        a.appendChild(span);
+        div.appendChild(a);
+
+        DOMId('pages').appendChild(div);
     }
 }
 

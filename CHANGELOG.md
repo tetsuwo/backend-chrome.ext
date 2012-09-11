@@ -2,6 +2,7 @@ CHANGE LOG
 ==========
 - 0.2.2
   - Modify for manifest version 2.
+  - Fix bug.
 - 0.1.7
   - Add GA.
 - 0.1.6
