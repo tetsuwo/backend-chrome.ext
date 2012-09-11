@@ -1,0 +1,21 @@
+CHANGE LOG
+==========
+- 0.2.2
+  - Modify for manifest version 2.
+- 0.1.7
+  - Add GA.
+- 0.1.6
+  - Add options.
+  - Modify localization.
+- 0.1.4
+  - Modify the extension name.
+- 0.1.3
+  - Modify the extension name.
+- 0.1.2
+  - Add chrome://downloads, chrome://history, chrome://bookmarks.
+- 0.1.1
+  - Add language select function.
+- 0.1.0
+  - Publish.
+- 0.0.1
+  - Start development.
