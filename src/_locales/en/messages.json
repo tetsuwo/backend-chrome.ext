@@ -15,7 +15,16 @@
     "message" : "Content settings"
   },
   "chrome_settings_cookies" : {
+    "message" : "Cookie"
+  },
+  "chrome_settings_site_data" : {
     "message" : "Cookie and site Data"
+  },
+  "chrome_urls" : {
+    "message" : "Chrome URLs"
+  },
+  "chrome_restart" : {
+    "message" : "Restart"
   },
   "chrome_settings_languages" : {
     "message" : "Languages"
@@ -47,8 +56,8 @@
   "chrome_bookmarks" : {
     "message" : "Bookmark Manager"
   },
-  "about_plugins" : {
-    "message" : "Plug-ins"
+  "chrome_components" : {
+    "message" : "Components"
   },
   "about_cache" : {
     "message" : "Cache List"

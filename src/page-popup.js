@@ -4,35 +4,33 @@ var LANG = localStorage.lang || chrome.i18n.getMessage('@@ui_locale');
 
 // ページリスト
 var PAGES = {
-    "chrome_settings_clear"    : "chrome://settings/clearBrowserData",
-    "chrome_settings_cookies"  : "chrome://settings/content/cookies",
-    "chrome_settings_content"  : "chrome://settings/content",
-    "chrome_settings_languages": "chrome://settings/languages",
-    "chrome_settings"          : "chrome://settings/",
-    "chrome_extensions"        : "chrome://extensions/",
-    "_webstore_theme"          : "https://chrome.google.com/webstore/category/themes",
-    "_webstore_home"           : "https://chrome.google.com/webstore",
-    "_webstore_ext"            : "https://chrome.google.com/webstore/category/extensions",
-    "chrome_downloads"         : "chrome://downloads",
-    "chrome_history"           : "chrome://history/",
-    "chrome_bookmarks"         : "chrome://bookmarks",
-    "about_plugins"            : "about:plugins",
-    "about_cache"              : "about:cache",
-    "about_memory"             : "about:memory",
-    "about_stats"              : "about:stats",
-    "about_dns"                : "about:dns",
-    "about_network"            : "about:network",
-    "about_crash"              : "about:crash",
-    "about_hang"               : "about:hang",
-    "about_internets"          : "about:internets",
-    "about_histograms"         : "about:histograms",
-    "about_version"            : "about:version",
-    "about_flags"              : "about:flags",
-    "chrome_help"              : "chrome://chrome/help/"
+    "chrome_settings_clear"     : "chrome://settings/clearBrowserData",
+    "chrome_settings_site_data" : "chrome://settings/siteData",
+    "chrome_settings_cookies"   : "chrome://settings/content/cookies",
+    //"chrome_restart"            : "chrome://restart/",
+    "chrome_urls"               : "chrome://chrome-urls/",
+    "chrome_settings_content"   : "chrome://settings/content",
+    "chrome_settings_languages" : "chrome://settings/languages",
+    "chrome_settings"           : "chrome://settings/",
+    "chrome_extensions"         : "chrome://extensions/",
+    "_webstore_ext"             : "https://chrome.google.com/webstore/category/extensions",
+    "_webstore_theme"           : "https://chrome.google.com/webstore/category/themes",
+    "_webstore_home"            : "https://chrome.google.com/webstore/category/apps",
+    "chrome_downloads"          : "chrome://downloads",
+    "chrome_history"            : "chrome://history/",
+    "chrome_bookmarks"          : "chrome://bookmarks",
+    "chrome_components"         : "chrome://components",
+    "about_cache"               : "chrome://cache",
+    "about_dns"                 : "chrome://dns",
+    "about_network"             : "chrome://network",
+    "about_histograms"          : "chrome://histograms",
+    "about_version"             : "chrome://version",
+    "about_flags"               : "chrome://flags",
+    "chrome_help"               : "chrome://settings/help/"
 };
 
 // タブをチェック
-function check2go(href) {
+function check2go(href, useWindow) {
     chrome.tabs.getAllInWindow(null,function(tabs) {
         for (var i = 0; i < tabs.length; i++) {
             if (tabs[i].url === href) {
@@ -65,12 +63,14 @@ function buildMenu() {
 
     for (key in PAGES) {
         var
-        url  = PAGES[key],
-        div  = document.createElement('div'),
-        a    = document.createElement('a'),
-        span = document.createElement('span');
+        url   = PAGES[key],
+        div   = document.createElement('div'),
+        a     = document.createElement('a'),
+        span  = document.createElement('span');
+        small = document.createElement('small');
 
         span.innerText = chrome.i18n.getMessage(key);
+        small.innerText = url;
 
         a.href = '#';
         a.setAttribute('data-url', url);
@@ -79,6 +79,7 @@ function buildMenu() {
         };
 
         a.appendChild(span);
+        a.appendChild(small);
         div.appendChild(a);
 
         DOMId('pages').appendChild(div);

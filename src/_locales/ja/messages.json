@@ -15,19 +15,28 @@
     "message" : "コンテンツの設定"
   },
   "chrome_settings_cookies" : {
-    "message" : "Cookie とサイトデータ"
+    "message" : "Cookie の設定"
+  },
+  "chrome_settings_site_data" : {
+    "message" : "すべての Cookie とサイトデータ"
+  },
+  "chrome_urls" : {
+    "message" : "Chrome URL 一覧"
+  },
+  "chrome_restart" : {
+    "message" : "再起動"
   },
   "chrome_settings_languages" : {
-    "message" : "言語"
+    "message" : "言語の設定"
   },
   "chrome_help" : {
     "message" : "ヘルプ"
   },
   "chrome_settings" : {
-    "message" : "設定"
+    "message" : "設定ホーム"
   },
   "chrome_extensions" : {
-    "message" : "拡張機能"
+    "message" : "拡張機能の管理"
   },
   "_webstore_theme" : {
     "message" : "テーマを探す"
@@ -47,8 +56,8 @@
   "chrome_bookmarks" : {
     "message" : "ブックマーク管理"
   },
-  "about_plugins" : {
-    "message" : "プラグイン管理"
+  "chrome_components" : {
+    "message" : "コンポーネント管理"
   },
   "about_cache" : {
     "message" : "キャッシュ一覧"

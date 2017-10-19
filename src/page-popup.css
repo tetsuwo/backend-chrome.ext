@@ -30,7 +30,7 @@ input,select{vertical-align:middle;}
 }
 
 #menu-container {
-  width: 180px;
+  width: 350px;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -52,24 +52,28 @@ input,select{vertical-align:middle;}
     text-decoration:none;
   }
   #pages a:hover {
-    background-color:#ddd;
-    color:#111;
+    background-color: #ddd;
+    color: #111;
   }
   #pages a:after {
-    content:"";
-    display:block;
-    clear:both;
+    content: "";
+    display: block;
+    clear: both;
   }
   #pages a span {
-    float:left;
+    float: left;
+    width: 50%;
   }
   #pages a small {
-    float:right;
-    font-weight:normal;
-    font-size:10px;
+    float: right;
+    width: 40%;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    color: #999;
   }
 
 #lang {
-  padding:5px 0;
+  padding: 5px 0;
 }
 
